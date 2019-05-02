@@ -1,0 +1,44 @@
+<view class='content'>
+  <view class='screen'>{{result}}</view>
+
+  <view class='btnGroup'>
+    <switch checked='{{record}}' bindchange='RecordHistory'></switch>
+    <view class='histext'>保存历史数据</view>
+  </view>
+
+  <view class='btnGroup'>
+    <button id='{{id1}}' bindtap='clickButton'>历史</button>
+    <button id='{{id2}}' bindtap='clickButton'>C</button>
+    <button id='{{id3}}' bindtap='clickButton'>←</button>
+    <button id='{{id4}}' bindtap='clickButton'>÷</button>
+  </view>
+
+  <view class='btnGroup'>
+    <button id='{{id5}}' bindtap='clickButton'>7</button>
+    <button id='{{id6}}' bindtap='clickButton'>8</button>
+    <button id='{{id7}}' bindtap='clickButton'>9</button>
+    <button id='{{id8}}' bindtap='clickButton'>×</button>
+  </view>
+
+  <view class='btnGroup'>
+    <button id='{{id9}}' bindtap='clickButton'>4</button>
+    <button id='{{id10}}' bindtap='clickButton'>5</button>
+    <button id='{{id11}}' bindtap='clickButton'>6</button>
+    <button id='{{id12}}' bindtap='clickButton'>-</button>
+  </view>
+
+  <view class='btnGroup'>
+    <button id='{{id13}}' bindtap='clickButton'>1</button>
+    <button id='{{id14}}' bindtap='clickButton'>2</button>
+    <button id='{{id15}}' bindtap='clickButton'>3</button>
+    <button id='{{id16}}' bindtap='clickButton'>+</button>
+  </view>
+
+  <view class='btnGroup'>
+    <button id='{{id17}}' bindtap='clickButton'>±</button>
+    <button id='{{id18}}' bindtap='clickButton'>0</button>
+    <button id='{{id19}}' bindtap='clickButton'>.</button>
+    <button id='{{id20}}' bindtap='clickButton'>=</button>
+  </view>
+  
+</view>
