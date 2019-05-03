@@ -1,0 +1,23 @@
+<view class='content'>
+  <form bindsubmit='formSubmit' bindreset='formReset'>
+    <view class='section section_gap'>
+      <view class='section_title'>声音</view>
+      <switch name='voice' checked='{{open}}'></switch>
+    </view>
+
+    <view class='section'>
+      <view class='section_title'>音量</view>
+      <slider name='volume' show-value value='{{vol}}'></slider>
+    </view>
+
+    <view class='section'>
+      <view class='section_title'>配置名</view>
+      <input name='config_name' placeholder='请输入配置名' value='{{configName}}'></input>
+    </view>
+
+    <view class='btn-area'>
+      <button form-type='submit' type='primary'>确定</button>
+      <button form-type='reset'>重置</button>
+    </view>
+  </form>
+</view>

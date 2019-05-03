@@ -1,0 +1,50 @@
+<view class='content'>
+  <form bindsubmit='formSubmit' bindreset='formReset'>
+    <view class='section'>
+      <view class='section_title'>性别:</view>
+      <radio-group name='sex'>
+        <label><radio value="male" checked/>男</label>
+        <label><radio value="female" style='margin-left:20rpx;'/>女</label>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <view class='section_title'>想去的国家:</view>
+      <checkbox-group name='regions'>
+        <label class='checkbox' wx:for='{{regions}}' wx:key=''>
+          <checkbox value='{{item.name}}' checked='{{item.checked}}' style='margin-left:20rpx;'>
+            {{item.value}}
+          </checkbox>
+        </label>
+      </checkbox-group>
+    </view>
+
+    <view class='section'>
+      <view class='section_title'>出发日期:</view>
+      <picker mode='date' name='date1' value='{{date}}' start='2019-01-01' end='2020-12-31' bindchange='bindDateChange'>
+        <view class='picker'>
+          {{date}}
+        </view>
+      </picker>
+    </view>
+
+    <view class='section'>
+      <view class='section_title'>出发时间:</view>
+      <picker mode='time' name='time1' value='{{time}}' start='8:00' end='20:00' bindchange='bindTimeChange'>
+        <view class='picker'>
+          {{time}}
+        </view>
+      </picker>
+    </view>
+
+    <view class='section'>
+      <view class='section_title'>其他建议:</view>
+      <textarea name='suggest' style='height:100rpx;' placeholder='建议' value='{{suggest}}'></textarea>
+    </view>
+
+    <view class='btn-area'>
+      <button form-type='submit' type='primary'>确定</button>
+      <button form-type='reset'>重置</button>
+    </view>
+  </form>
+</view>
